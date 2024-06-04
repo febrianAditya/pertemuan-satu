@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <h1 id="firstname">Rachel</h1>
+
+    <!-- <h3 id="">Febrian</h3> -->
+
+
+    <h1 class="student">Rachel</h1>
+    <h1 class="student">Febrian</h1>
+    <h1 class="student">Diana</h1>
+    <h1 id="beststudent"></h1>
+
+    <img src="localhost:3000" alt="">
+
+    <script>
+        // let thisTag = document.getElementById("firstname").innerHTML = "Febrian"
+        // console.log(thisTag);
+
+        let getStudents = document.querySelectorAll('.student')
+
+        // document.getElementsByClassName("student")
+        // console.log(getStudents[2].innerHTML);
+        let valueDiana = getStudents[2].innerHTML
+
+        let getImage = document.querySelector("img")
+        getImage.src = "localhost:4000"
+        // console.log(","==> INI YAA");
+
+        document.getElementById("beststudent").innerHTML = valueDiana
+    </script>
+</body>
+</html>
